@@ -152,10 +152,24 @@ namespace Assinment03
 
             #region Q15
             //Using the same books array, use a foreach loop to print every book title.
+            //string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            //foreach (string s in books)
+            //{
+            //    Console.WriteLine(s);
+            //}
+            #endregion
+
+            #region Q16
+            //Using the same books array, loop through it and print each title, but stop completely (break) once
+            //you reach "Refactoring".
             string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
-            foreach (string s in books)
+            for(int i = 0; i < books.Length; i++)
             {
-                Console.WriteLine(s);
+               if(books[i] == "Refactoring")
+                {
+                    break;
+                }
+                Console.WriteLine(books[i]);
             }
             #endregion
         }
