@@ -61,9 +61,24 @@ namespace Assinment03
 
             #region Q07
             //Build the same sentence again, but using string.Format().
-            string titel = "Clean Code";
+            //string titel = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine(string.Format("Book: {0},Pages: {1}", titel, pages));
+            #endregion
+
+            #region Q08
+            //Given int pages = 464;, write an if / else statement that prints "Long Book" if pages is greater than
+            //300, otherwise prints "Short Book".
             int pages = 464;
-            Console.WriteLine(string.Format("Book: {0},Pages: {1}", titel, pages));
+            if (pages > 300)
+            {
+                Console.WriteLine("Long Book");
+            }
+            else
+            {
+                Console.WriteLine("Short Book");
+
+            }
             #endregion
         }
     }
