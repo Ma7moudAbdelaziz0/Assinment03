@@ -141,13 +141,22 @@ namespace Assinment03
 
             #region Q14
             //Write a do-while loop that prints "Checking book..." exactly 3 times.
-            int count = 0;
-            do
+            //int count = 0;
+            //do
+            //{
+            //    Console.WriteLine("Checking book...");
+            //    count++;
+            //}
+            //while (count < 3);
+            #endregion
+
+            #region Q15
+            //Using the same books array, use a foreach loop to print every book title.
+            string[] books = { "Clean Code", "The Pragmatic Programmer", "Refactoring" };
+            foreach (string s in books)
             {
-                Console.WriteLine("Checking book...");
-                count++;
+                Console.WriteLine(s);
             }
-            while (count < 3);
             #endregion
         }
     }
