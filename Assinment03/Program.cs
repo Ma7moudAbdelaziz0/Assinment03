@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.Net.NetworkInformation;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -29,9 +31,16 @@ namespace Assinment03
             #region Q03
             //Create a StringBuilder, Append() the text "Book List", then Append() " - Updated" onto the same
             //object.Print the final result.
-            StringBuilder sb= new StringBuilder();
+            StringBuilder sb = new StringBuilder();
             sb.Append("Book List");
             sb.Append(" - Updated");
+            //Console.WriteLine(sb.ToString());
+            #endregion
+
+            #region Q04
+            //Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library".
+            //Print the result.
+            sb.Replace("Book List", "Library");
             Console.WriteLine(sb.ToString());
             #endregion
         }
