@@ -54,9 +54,16 @@ namespace Assinment03
 
             #region Q06
             //Build the same sentence as above, but using string interpolation ($"...")
-            string title = "Clean Code";
+            //string title = "Clean Code";
+            //int pages = 464;
+            //Console.WriteLine($"Book: {title},Pages: {pages}");
+            #endregion
+
+            #region Q07
+            //Build the same sentence again, but using string.Format().
+            string titel = "Clean Code";
             int pages = 464;
-            Console.WriteLine($"Book: {title},Pages: {pages}");
+            Console.WriteLine(string.Format("Book: {0},Pages: {1}", titel, pages));
             #endregion
         }
     }
